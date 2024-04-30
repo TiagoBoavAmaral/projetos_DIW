@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Média</title>
+</head>
+
+<body>
+
+<h1>Calculadora de Média</h1>
+
+<script>
+var nota1 = prompt("Digite a primeira nota:");
+var nota2 = prompt("Digite a segunda nota:");
+var nota3 = prompt("Digite a terceira nota:");
+
+var nota1Numero = parseFloat(nota1);
+var nota2Numero = parseFloat(nota2);
+var nota3Numero = parseFloat(nota3);
+
+if (isNaN(nota1Numero) || isNaN(nota2Numero) || isNaN(nota3Numero)) {
+    alert("Por favor, insira valores numéricos válidos para as notas.");
+} else {
+    var media = (nota1Numero + nota2Numero + nota3Numero) / 3;
+
+    alert("A média das notas é: " + media.toFixed(2));
+}
+</script>
+
+</body>
+</html>

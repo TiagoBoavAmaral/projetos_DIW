@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Básica</title>
+</head>
+
+<body>
+
+<h1>Calculadora Básica</h1>
+
+<script>
+var operacao = prompt("Escolha uma operação: soma, subtracao, multiplicacao ou divisao").toLowerCase();
+
+var numero1 = prompt("Digite o primeiro número:");
+var numero2 = prompt("Digite o segundo número:");
+
+var num1 = parseFloat(numero1);
+var num2 = parseFloat(numero2);
+
+if (isNaN(num1) || isNaN(num2)) {
+    alert("Por favor, insira valores numéricos válidos.");
+} else {
+    switch (operacao) {
+        case "soma":
+            var resultado = num1 + num2;
+            alert("O resultado da soma é: " + resultado);
+            break;
+        case "subtracao":
+            var resultado = num1 - num2;
+            alert("O resultado da subtração é: " + resultado);
+            break;
+        case "multiplicacao":
+            var resultado = num1 * num2;
+            alert("O resultado da multiplicação é: " + resultado);
+            break;
+        case "divisao":
+            if (num2 !== 0) {
+                var resultado = num1 / num2;
+                alert("O resultado da divisão é: " + resultado);
+            } else {
+                alert("Não é possível dividir por zero.");
+            }
+            break;
+        default:
+            alert("Operação inválida. Por favor, escolha entre soma, subtração, multiplicação ou divisão.");
+    }
+}
+</script>
+</body>
+</html>

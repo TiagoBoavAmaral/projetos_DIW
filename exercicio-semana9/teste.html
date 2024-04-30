@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interagindo com o Usuário em JavaScript</title>
+</head>
+
+<body>
+
+<h1>Interagindo com o Usuário em JavaScript</h1>
+
+<script>
+// Código JavaScript para interagir com o usuário
+
+// Exibe um alerta
+alert("Olá, mundo!");
+
+// Pergunta ao usuário se deseja confirmar algo
+var confirmacao = confirm("Você gostaria de confirmar algo?");
+if (confirmacao) {
+    alert("Você confirmou!");
+} else {
+    alert("Você cancelou!");
+}
+
+// Solicita um número ao usuário
+var numero1 = prompt("Digite o primeiro número:");
+var numero2 = prompt("Digite o segundo número:");
+
+// Converte os valores de string para número e calcula a soma
+var soma = parseInt(numero1) + parseInt(numero2);
+
+// Exibe o resultado
+alert("A soma dos números é: " + soma);
+</script>
+
+</body>
+</html> 
